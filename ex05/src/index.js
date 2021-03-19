@@ -5,7 +5,7 @@ var myNestedArray = [
 ];
 
 function myNestedFunction(arr) {
-    return arr;
+  return arr;
 }
 // Only change code above this line
 
