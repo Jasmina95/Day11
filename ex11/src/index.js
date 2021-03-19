@@ -8,7 +8,7 @@ function splitArrayInGroups(arr, n) {
     result.push(myArray.slice(i, i + n));
     counter++;
     if (counter === n) {
-        break;
+      break;
     }
   }
 
