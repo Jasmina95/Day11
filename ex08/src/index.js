@@ -2,22 +2,18 @@
 function myMutation(arr) {
   var firstString = arr[0].toLowerCase();
   var secondString = arr[1].toLowerCase();
-  var valid = false;
 
   for (var i = 0; i < secondString.length; i++) {
-    valid = false;
     for (var j = 0; j < firstString.length; j++) {
       if (secondString[i] === firstString[j]) {
-        valid = true;
-        j = firstString.length - 1;
-        continue;
+        break;
       }
-      if (j === firstString.length - 1 && valid === false) {
-        return valid;
+      if (j === firstString.length - 1) {
+        return false;
       }
     }
   }
-  return valid;
+  return true;
 }
 // Only change code above this line
 console.log(myMutation(["hello", "hey"])); // Change this line
